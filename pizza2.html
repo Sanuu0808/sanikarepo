@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fff9f5;
+      color: #333;
+    }
+    header {
+      background: #d62828;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601924638867-3ec6c42f6c51') center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .hero h2 {
+      background: rgba(0,0,0,0.6);
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: #d62828;
+      margin-bottom: 20px;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+    }
+    .item img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .item h3 {
+      margin: 10px 0 5px;
+    }
+    .btn {
+      display: inline-block;
+      background: #d62828;
+      color: white;
+      padding: 8px 15px;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    footer {
+      background: #d62828;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pizza Shop</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hot & Fresh Pizzas, Just For You!</h2>
+  </section>
+
+  <section class="section" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65" alt="Margherita Pizza">
+        <h3>Margherita</h3>
+        <p>Classic cheese & tomato pizza with fresh basil.</p>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1603079849934-4a9a4892d57e" alt="Pepperoni Pizza">
+        <h3>Pepperoni</h3>
+        <p>Loaded with pepperoni & mozzarella cheese.</p>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1628840042765-3562289f89c0" alt="Veggie Pizza">
+        <h3>Veggie Special</h3>
+        <p>Fresh veggies with herbs & cheese delight.</p>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>At Pizza Shop, we bake pizzas with passion and the finest ingredients. Whether it’s a cheesy Margherita or a spicy Pepperoni, we’ve got you covered!</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: order@pizzashop.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Address: 123 Pizza Street, Your City</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pizza Shop | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
